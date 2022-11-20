@@ -1,3 +1,21 @@
+GIT
+  remote: https://github.com/okonomi/weneedfeed.git
+  revision: 856d67150ec96c9ed8c7c007cbbdae21f446cb57
+  branch: feature-item-time-format
+  specs:
+    weneedfeed (0.20.0)
+      activesupport
+      addressable
+      builder
+      faraday
+      faraday_middleware
+      hibana (>= 0.2.1)
+      marcel
+      nokogiri
+      psych (>= 4)
+      rack-capture (>= 0.4.0)
+      thor
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -70,25 +88,13 @@ GEM
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     webrick (1.7.0)
-    weneedfeed (0.20.0)
-      activesupport
-      addressable
-      builder
-      faraday
-      faraday_middleware
-      hibana (>= 0.2.1)
-      marcel
-      nokogiri
-      psych (>= 4)
-      rack-capture (>= 0.4.0)
-      thor
 
 PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
   webrick
-  weneedfeed
+  weneedfeed!
 
 BUNDLED WITH
    2.3.25

@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "weneedfeed"
+gem "weneedfeed", github: "okonomi/weneedfeed", branch: "feature-item-time-format"
 
 group :development do
   gem "webrick"
