@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/okonomi/weneedfeed.git
-  revision: 856d67150ec96c9ed8c7c007cbbdae21f446cb57
+  revision: 350265cbcb28a7dbcd174f16b369c48dae66af5a
   branch: feature-item-time-format
   specs:
     weneedfeed (0.20.0)

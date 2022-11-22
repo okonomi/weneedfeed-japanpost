@@ -9,6 +9,7 @@ pages:
     item_link_selector: td:nth-child(2) a
     item_description_selector: td:nth-child(1)
     item_time_selector: td:nth-child(1)
+    item_time_format: ●%Y年 %m月 %d日更新分
     item_title_selector: td:nth-child(1)
   - id: japanpost-zipcode-del
     title: 郵便番号差分データ(削除)
@@ -18,4 +19,5 @@ pages:
     item_link_selector: td:nth-child(3) a
     item_description_selector: td:nth-child(1)
     item_time_selector: td:nth-child(1)
+    item_time_format: ●%Y年 %m月 %d日更新分
     item_title_selector: td:nth-child(1)
