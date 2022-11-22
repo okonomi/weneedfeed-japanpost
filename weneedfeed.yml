@@ -1,57 +1,45 @@
+add_item: &add_item
+  item_selector: "#main-box table.data:nth-of-type(2) tr:not(:first-child)"
+  item_link_selector: td:nth-child(2) a
+  item_description_selector: td:nth-child(1)
+  item_time_selector: td:nth-child(1)
+  item_time_format: ●%Y年 %m月 %d日更新分
+  item_title_selector: td:nth-child(1)
+
+del_item: &del_item
+  item_selector: "#main-box table.data:nth-of-type(2) tr:not(:first-child)"
+  item_link_selector: td:nth-child(3) a
+  item_description_selector: td:nth-child(1)
+  item_time_selector: td:nth-child(1)
+  item_time_format: ●%Y年 %m月 %d日更新分
+  item_title_selector: td:nth-child(1)
+
 title: JAPAN POST zipcode data
 
 pages:
   - id: japanpost-oogaki-zip-add
     title: 住所郵便番号 促音拗音大書き(追加)
     url: https://www.post.japanpost.jp/zipcode/dl/oogaki-zip.html
-    item_selector: "#main-box table.data:nth-of-type(2) tr:not(:first-child)"
-    item_link_selector: td:nth-child(2) a
-    item_description_selector: td:nth-child(1)
-    item_time_selector: td:nth-child(1)
-    item_time_format: ●%Y年 %m月 %d日更新分
-    item_title_selector: td:nth-child(1)
+    <<: *add_item
   - id: japanpost-oogaki-zip-del
     title: 住所郵便番号 促音拗音大書き(廃止)
     url: https://www.post.japanpost.jp/zipcode/dl/oogaki-zip.html
-    item_selector: "#main-box table.data:nth-of-type(2) tr:not(:first-child)"
-    item_link_selector: td:nth-child(3) a
-    item_description_selector: td:nth-child(1)
-    item_time_selector: td:nth-child(1)
-    item_time_format: ●%Y年 %m月 %d日更新分
-    item_title_selector: td:nth-child(1)
+    <<: *del_item
   - id: japanpost-kogaki-zip-add
     title: 住所郵便番号 促音拗音小書き(追加)
     url: https://www.post.japanpost.jp/zipcode/dl/kogaki-zip.html
-    item_selector: "#main-box table.data:nth-of-type(2) tr:not(:first-child)"
-    item_link_selector: td:nth-child(2) a
-    item_description_selector: td:nth-child(1)
-    item_time_selector: td:nth-child(1)
-    item_time_format: ●%Y年 %m月 %d日更新分
-    item_title_selector: td:nth-child(1)
+    <<: *add_item
   - id: japanpost-kogaki-zip-del
     title: 住所郵便番号 促音拗音小書き(廃止)
     url: https://www.post.japanpost.jp/zipcode/dl/kogaki-zip.html
-    item_selector: "#main-box table.data:nth-of-type(2) tr:not(:first-child)"
-    item_link_selector: td:nth-child(3) a
-    item_description_selector: td:nth-child(1)
-    item_time_selector: td:nth-child(1)
-    item_time_format: ●%Y年 %m月 %d日更新分
-    item_title_selector: td:nth-child(1)
+    <<: *del_item
   - id: japanpost-jigyosyo-zip-add
     title: 事業所の個別郵便番号(追加)
     url: https://www.post.japanpost.jp/zipcode/dl/jigyosyo/index-zip.html
+    <<: *add_item
     item_selector: "#main-box table.data:nth-of-type(1) tr:not(:first-child)"
-    item_link_selector: td:nth-child(2) a
-    item_description_selector: td:nth-child(1)
-    item_time_selector: td:nth-child(1)
-    item_time_format: ●%Y年 %m月 %d日更新分
-    item_title_selector: td:nth-child(1)
   - id: japanpost-jigyosyo-zip-del
     title: 事業所の個別郵便番号(廃止)
     url: https://www.post.japanpost.jp/zipcode/dl/jigyosyo/index-zip.html
+    <<: *del_item
     item_selector: "#main-box table.data:nth-of-type(1) tr:not(:first-child)"
-    item_link_selector: td:nth-child(3) a
-    item_description_selector: td:nth-child(1)
-    item_time_selector: td:nth-child(1)
-    item_time_format: ●%Y年 %m月 %d日更新分
-    item_title_selector: td:nth-child(1)
